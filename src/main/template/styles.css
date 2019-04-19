@@ -1,0 +1,123 @@
+/*
+COLOR :
+#FFFAEB
+#D0F0FF
+#F2B79F
+#353535
+#424B54
+*/
+
+body{
+    background-color: #D0F0FF;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0px;
+    font-size: 62.5%;
+}
+
+.top_bar{
+    background-color: #FFFAEB;
+    width: 100%;
+    height: 9em;
+    min-height: 6em;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 6px #dbdbdb; 
+}
+
+.top_search_bar{
+    height: 30%;
+    width: 40%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+input.top_search_bar{
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    display: block;
+    width: 95%;
+    height: 100%;
+    margin-right: 0px;
+}
+
+button.top_search_bar{
+    width: 5%;
+    height: 100%;
+    margin-right: 0px;
+}
+
+.top_user_settings{
+    color: white;
+    display: block;
+    background-color: #424B54;
+    box-shadow: 2px 2px 6px #dbdbdb; 
+    margin-right: 1em;
+    text-align: center;
+    font-size: 2.8em;
+    height: 41px;
+    width: 41px;
+    border-radius: 50%;
+}
+
+.title{
+    color: #F2B79F;
+    font-size: 3.5em;
+    padding-left: 0.5em;
+}
+.title:hover {
+    text-shadow: 2px 2px 6px #dbdbdb;
+    color: #FAC17E;
+}
+
+.login_body{
+    background-color: #FFFAEB;
+    height: 35em;
+    width: 40em;
+    margin-top: 8%;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #dbdbdb;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_form{
+    font-size: 2em;
+    color: #F2B79F;
+    height: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_form_text{
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+}
+
+.login_form_submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 18%;
+    align-self: end;
+}
+
+.login_form_forgot{
+    color: #F2B79F;
+    font-size: 0.8em;
+    text-decoration: underline;
+}
