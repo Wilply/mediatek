@@ -11,6 +11,7 @@ body{
     background-color: #D0F0FF;
     height: 100%;
     width: 100%;
+    min-width: 800px;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -34,7 +35,7 @@ body{
 .top_search_bar{
     height: 30%;
     width: 40%;
-    margin-right: 15%;
+    margin-right: 10%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -56,16 +57,24 @@ button.top_search_bar{
 }
 
 .top_user_settings{
-    color: white;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #424B54;
     box-shadow: 2px 2px 6px #dbdbdb; 
     margin-right: 1em;
     text-align: center;
-    font-size: 2.8em;
-    height: 41px;
-    width: 41px;
+    height: 5em;
+    width: 5em;
     border-radius: 50%;
+}
+
+.top_user_initial{
+    color: white;
+    font-size: 3em;
+    margin-right: 0.00009em;
+    margin-bottom: 0.1em;
 }
 
 .title{
@@ -120,4 +129,62 @@ button.top_search_bar{
     color: #F2B79F;
     font-size: 0.8em;
     text-decoration: underline;
+}
+
+.core{
+    width: 100%;
+    min-height: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.core_folder{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    margin-top: 3em;
+    flex-flow: column nowrap;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding-right: 0.3%;
+    /* enfaite il faut juste faire des trai de separation*/
+}
+
+.core_folder::-webkit-scrollbar { 
+    display: none; 
+}
+
+.folder{
+    background-color: #FFFAEB;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    border-color: #424B54;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.folder:hover{
+    box-shadow: 2px 2px 5px #4f4f4f;
+    z-index:2;
+}
+
+.folder_name{
+    font-size: 1.5em;
+    flex-grow: 1;
+    padding-left: 3%;
+}
+
+.folder_last_update{
+    font-size: 1.5em;
+    width: 8em;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
